@@ -85,6 +85,12 @@ window.onkeydown = event => {
     if (y > canvas.height - ch - 5 && event.key == ' ') {
         isJumping = true;
     }
-}
+};
+
+window.ontouchstart = event => {
+    if (y > canvas.height - ch - 5) {
+        isJumping = true;
+    }
+};
 
 requestAnimationFrame(draw);
